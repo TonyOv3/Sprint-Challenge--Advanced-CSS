@@ -1,1 +1,17 @@
 // Mixins Here
+.border() {
+    padding: 10px 0;
+ 
+ }
+ 
+ .custom-btn (@width: 100px, @bg-color: navy, @font-color: white) {
+    width: @width;
+    background-color: @bg-color;
+    color: @font-color;
+    font-size: 2rem;
+ 
+  }
+ 
+ .btn {
+    .custom-btn(105px, navy, white);
+  }
