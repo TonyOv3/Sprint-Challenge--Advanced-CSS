@@ -2,165 +2,197 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+.btn {
+  width: 105px;
+  background-color: navy;
+  color: white;
+  font-size: 2rem;
+ }
+ /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+ */
+ html,
+ body,
+ div,
+ span,
+ applet,
+ object,
+ iframe,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ blockquote,
+ pre,
+ a,
+ abbr,
+ acronym,
+ address,
+ big,
+ cite,
+ code,
+ del,
+ dfn,
+ em,
+ img,
+ ins,
+ kbd,
+ q,
+ s,
+ samp,
+ small,
+ strike,
+ strong,
+ sub,
+ sup,
+ tt,
+ var,
+ b,
+ u,
+ i,
+ center,
+ dl,
+ dt,
+ dd,
+ ol,
+ ul,
+ li,
+ fieldset,
+ form,
+ label,
+ legend,
+ table,
+ caption,
+ tbody,
+ tfoot,
+ thead,
+ tr,
+ th,
+ td,
+ article,
+ aside,
+ canvas,
+ details,
+ embed,
+ figure,
+ figcaption,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ output,
+ ruby,
+ section,
+ summary,
+ time,
+ mark,
+ audio,
+ video {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+ }
+ /* HTML5 display-role reset for older browsers */
+ article,
+ aside,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ section {
   display: block;
-}
-body {
+ }
+ body {
   line-height: 1;
-}
-ol,
-ul {
+ }
+ ol,
+ ul {
   list-style: none;
-}
-blockquote,
-q {
+ }
+ blockquote,
+ q {
   quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+ }
+ blockquote:before,
+ blockquote:after,
+ q:before,
+ q:after {
   content: '';
   content: none;
-}
-table {
+ }
+ table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-* {
+ }
+ * {
   box-sizing: border-box;
-}
-html {
+ }
+ html {
   font-size: 62.5%;
-}
-html,
-body {
+ }
+ html,
+ body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
+ }
+ h1,
+ h2,
+ h3,
+ h4,
+ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
-}
-h2 {
+ }
+ h2 {
   font-size: 3.2rem;
-}
-h3 {
+ }
+ h3 {
   font-size: 2.8rem;
-}
-p {
+ }
+ p {
   font-size: 1.6rem;
   line-height: 1.4;
-}
-.container {
+ }
+ .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-}
-footer {
+ }
+ a:link {
+  text-decoration: none;
+ }
+ .container header h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  background-color: whitesmoke;
+  padding: 20px;
+ }
+ .container header nav {
+  background-color: whitesmoke;
+  font-size: 16px;
+  color: black;
+  width: 100%;
+ }
+ .container nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+ }
+ footer {
   color: #22283B;
   background: #f4f4f4;
   padding: 20px 0;
@@ -169,117 +201,117 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.intro h2 {
+ }
+ .intro h2 {
   padding: 15px;
-}
-.intro p {
+ }
+ .intro p {
   padding: 0 15px;
-}
-.main-header {
+ }
+ .main-header {
   width: 100%;
-}
-@media only screen and (max-width: 500px) {
+ }
+ @media only screen and (max-width: 500px) {
   .main-header {
     width: 100%;
   }
-}
-.space-images {
+ }
+ .space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-}
-.space-images img {
+ }
+ .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
-}
-@media only screen and (max-width: 500px) {
+ }
+ @media only screen and (max-width: 500px) {
   .space-images img {
     width: 100%;
   }
-}
-.visit-planets {
+ }
+ .visit-planets {
   padding: 15px;
-}
-.visit-planets h3 {
+ }
+ .visit-planets h3 {
   margin-top: 11px;
-}
-.visit-planets p {
+ }
+ .visit-planets p {
   margin-top: 13px;
-}
-.walk {
+ }
+ .walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
-}
-.walk-row {
+ }
+ .walk-row {
   display: flex;
   justify-content: center;
-}
-@media only screen and (max-width: 500px) {
+ }
+ @media only screen and (max-width: 500px) {
   .walk-row {
     flex-direction: column-reverse;
   }
-}
-.walk-text {
+ }
+ .walk-text {
   width: 100%;
-}
-.walk-text h3 {
+ }
+ .walk-text h3 {
   margin-bottom: 10px;
-}
-.walk-text p {
+ }
+ .walk-text p {
   margin-bottom: 26px;
-}
-@media only screen and (max-width: 500px) {
+ }
+ @media only screen and (max-width: 500px) {
   .walk-text {
     width: 100%;
   }
-}
-.walk-img {
+ }
+ .walk-img {
   width: 46%;
   margin-left: 4%;
-}
-.walk-img img {
+ }
+ .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-@media only screen and (max-width: 500px) {
+ }
+ @media only screen and (max-width: 500px) {
   .walk-img {
     width: 100%;
   }
-}
-.blast {
+ }
+ .blast {
   width: 100%;
-}
-@media only screen and (max-width: 500px) {
+ }
+ @media only screen and (max-width: 500px) {
   .blast {
     width: 100%;
   }
-}
-.sky {
+ }
+ .sky {
   width: 100%;
-}
-@media only screen and (max-width: 500px) {
+ }
+ @media only screen and (max-width: 500px) {
   .sky {
     display: none;
   }
-}
-.launch {
+ }
+ .launch {
   width: 100%;
-}
-@media only screen and (max-width: 500px) {
+ }
+ @media only screen and (max-width: 500px) {
   .launch {
     display: none;
   }
-}
-.btn {
+ }
+ .btn {
   width: 100px;
-}
-@media only screen and (max-width: 500px) {
+ }
+ @media only screen and (max-width: 500px) {
   .btn {
     width: 100%;
   }
-}
+ }
